@@ -3,6 +3,22 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  --border: 215.4deg 16.3% 46.9%;
+  --input: 215.4deg 16.3% 46.9%;
+  --ring: 215.4deg 16.3% 46.9%;
+  
+  --primary: 222.2deg 47.4% 50%;
+  --primary-foreground: 210deg 40% 98%;
+  
+  --secondary: 210deg 40% 96.1%;
+  --secondary-foreground: 222.2deg 47.4% 11.2%;
+  
+  --muted: 210deg 40% 96.1%;
+  --muted-foreground: 215.4deg 16.3% 46.9%;
+  
+  --accent: 210deg 40% 96.1%;
+  --accent-foreground: 222.2deg 47.4% 11.2%;
 }
 
 @theme inline {
@@ -16,6 +32,22 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    
+    --border: 217.2deg 32.6% 17.5%;
+    --input: 217.2deg 32.6% 17.5%;
+    --ring: 212.7deg 26.8% 83.9%;
+    
+    --primary: 210deg 100% 70%;
+    --primary-foreground: 222.2deg 47.4% 11.2%;
+    
+    --secondary: 217.2deg 32.6% 17.5%;
+    --secondary-foreground: 210deg 40% 98%;
+    
+    --muted: 217.2deg 32.6% 17.5%;
+    --muted-foreground: 215deg 20.2% 65.1%;
+    
+    --accent: 217.2deg 32.6% 17.5%;
+    --accent-foreground: 210deg 40% 98%;
   }
 }
 
@@ -23,4 +55,45 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Portfolio Custom Styles */
+.bg-gradient-to-br.from-purple-900.to-purple-800 {
+  background: linear-gradient(135deg, #4a1d96 0%, #581c87 100%);
+}
+
+.profile-frame {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.profile-decoration {
+  position: absolute;
+  background-color: #e9d5ff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+/* Animation for scroll button */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.scroll-button {
+  animation: bounce 2s infinite;
 }
